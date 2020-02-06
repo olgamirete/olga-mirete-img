@@ -7,7 +7,9 @@ width = scale
 height = scale
 size = (width, height)
 font_path = 'fonts/atwriter.ttf'
-font = ImageFont.truetype(font_path, 28)
+font_size_as_percentage_of_height = 0.08
+font_size = int(height * font_size_as_percentage_of_height) # 28
+font = ImageFont.truetype(font_path, font_size)
 min_margin = 0.2
 base_color = rgb2hex(200, 100, 0)
 
