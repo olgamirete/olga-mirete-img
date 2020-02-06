@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 from utils.rgb import rgb2hex
+from utils.text import get_wrapped_text
 
 mode = 'RGB'
 scale = 300
