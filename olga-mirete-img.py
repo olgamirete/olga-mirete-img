@@ -25,5 +25,8 @@ text_to_draw = 'This is a test.'
 text_to_draw = 'This is a longer test that will help see how this is going to be handled.'
 draw.text((10, 10), text_to_draw, rgb2hex(255, 255, 255), font)
 
+line_size = font.getsize('hg')
+line_size_2 = font.getsize('abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ¿¡?!",.|<>°^*+-~$%&/[()]öäüÖÄÜ_—')
+
 im.show()
 # im.save('output/test.png')
